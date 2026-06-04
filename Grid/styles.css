@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 100px;
+  background-color: rgb(39, 22, 55);
+}
+
+.grid-container {
+  /* Container Height and width */
+  height: 660px;
+  width: 100%;
+  border: 2px solid black;
+  background-color: rgb(32, 21, 61);
+  display: grid;
+align-items: center;
+  /* Grid Layout: 5 columns, 3 rows */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  /* Gaps */
+  gap: 10px;
+}
+
+#grid-item-1 {
+  background-color: rgb(63, 165, 80);
+  grid-column: 1/2;
+  grid-row: 1 / 4;
+  align-items: center;
+}
+
+#grid-item-2 {
+  background-color: rgb(63, 165, 80);
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  align-items: center;
+}
+
+#grid-item-3 {
+  background-color: rgb(255, 85, 85);
+  grid-column: 4 / 6;
+  grid-row: 1 / 2;
+  align-items: center;
+}
+
+/* Grid Item 4: Orange/brown box - middle left */
+#grid-item-4 {
+  background-color: rgb(184, 134, 11);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-items: center;
+}
+
+/* Grid Item 5: Red box with icon - middle center */
+#grid-item-5 {
+  background-color: rgb(131, 6, 6);
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  align-items: center;
+}
+
+/* Grid Item 6: Green box - right side, spans 2 rows */
+#grid-item-6 {
+  background-color: rgb(63, 165, 80);
+  grid-column: 4 / 6;
+  grid-row: 2 / 4;
+  align-items: center;
+}
+
+#grid-item-7 {
+  background-color: rgb(255, 85, 85);
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  align-items: center;
+}
+
+/* Grid Item 8: Orange/Yellow box - bottom middle */
+#grid-item-8 {
+  background-color: rgb(255, 200, 87);
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  align-items: center;
+}
+
+.grid-items {
+  width: 100%;
+  height: 100%;
+  /* flex */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
