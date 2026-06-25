@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-color: rgb(165, 165, 181);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-} */
+    background-color: rgb(165, 165, 181);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #container {
     width: 400px;
     height: 650px;
@@ -18,14 +20,13 @@
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: 2px 2px 5px gray;
-    margin: 10vw;
-    background-color:darkgray;
+    background-color: darkgray;
 }
-.img-container{
+.img-container {
     position: relative;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
-    
+    height: 60%;
 }
 
 .img-container img {

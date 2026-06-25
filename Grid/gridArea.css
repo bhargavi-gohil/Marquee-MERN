@@ -1,0 +1,11 @@
+body{
+    display: grid;
+    background-color: rgb(118, 118, 138);
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: ; */
+}
+
+
+header{
+    background-color: #333;
+}
