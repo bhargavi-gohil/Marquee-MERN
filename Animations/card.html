@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinking Green Profile Card</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #afb9c0, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .photo {
+      position: relative;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    /* Blinking green circle in top-right corner */
+    .blink-circle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: darkgreen;
+      animation: blinkGreen 1.5s infinite alternate;
+    }
+
+    /* Animation from dark green to light green */
+    @keyframes blinkGreen {
+      0% { background-color: darkgreen; box-shadow: 0 0 5px darkgreen; }
+      100% { background-color: lightgreen; box-shadow: 0 0 15px lightgreen; }
+    }
+
+    .info h2 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    .info p {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0;
+      font-size: 0.85rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .follow {
+      background: purple;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .message {
+      background: #ccc;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .outer-box {
+        background-color: plum;
+        border-radius: 25px;
+        padding: 30px;
+
+    }
+  </style>
+</head>
+<body>
+    <div class="outer-box">
+  <div class="profile-card">
+    <div class="photo">
+      <div class="blink-circle"></div>
+      <img src="https://i.pinimg.com/736x/2a/db/a0/2adba0b6ce6c647b7ce6ef2308375d0f.jpg" alt="Profile Photo">
+    </div>
+
+    <div class="info">
+      <h2>Sophia Carter</h2>
+      <p>Web Developer</p>
+      <div class="stats">
+        <span>100 Posts</span>
+        <span>100k Followers</span>
+        <span>185 Following</span>
+      </div>
+      <div class="buttons">
+        <button class="follow">Follow</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
