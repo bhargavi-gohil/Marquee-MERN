@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Lights</title>
+    <style>
+      body {
+        background-color: black;
+      }
+    
+      .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        transition-property: border-color;
+        
+      }
+      #red {
+        animation-iteration-count: infinite;
+
+        background-color: red;
+        animation-name: pop-in-out;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        /* box-shadow: 0 0 10px 5px ghostwhite; */
+      }
+      @keyframes pop-in-out {
+        0% {
+          box-shadow: 0 0 10px 5px ghostwhite;
+        }
+        25% {
+          box-shadow: 0 0 10px 5px ghostwhite;
+        }
+        50% {
+          box-shadow: 0 0 10px 5px ghostwhite;
+        }
+      }
+      #yellow {
+        animation-iteration-count: infinite;
+        animation-name: pop-in-out;
+        background-color: yellow;
+        animation-duration: 3s;
+        animation-delay: 3s;
+      }
+      #green {
+        animation-iteration-count: infinite;
+
+        animation-name: pop-in-out;
+        background-color: green;
+        animation-duration: 1s;
+        animation-delay: 4s;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="box" id="red"></div>
+      <br />
+      <div class="box" id="yellow"></div>
+      <br />
+      <div class="box" id="green"></div>
+      <br />
+  </body>
+</html>
