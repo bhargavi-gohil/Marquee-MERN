@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-circle">A</div>
+                <span>AdminLTE 4</span>
+            </div>
+
+            <ul class="menu">
+                <li><i class="fa-solid fa-cube"></i> Widgets</li>
+                <li><i class="fa-solid fa-briefcase"></i> Layout Options</li>
+                <li><i class="fa-solid fa-tree"></i> UI Elements</li>
+
+                <li class="active">
+                    <i class="fa-regular fa-envelope"></i> Mailbox
+                </li>
+
+                <li class="sub">Inbox</li>
+                <li class="sub">Read Message</li>
+                <li class="sub">Compose</li>
+
+                <li><i class="fa-regular fa-file"></i> Forms</li>
+                <li><i class="fa-solid fa-table"></i> Tables</li>
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <div class="header">
+                <h1>Dashboard</h1>
+                <p>Home / Dashboard</p>
+            </div>
+
+            <!-- Cards -->
+            <section class="cards">
+
+                <div class="card blue">
+                    <div>
+                        <h2>150</h2>
+                        <p>New Orders</p>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping icon"></i>
+                </div>
+
+                <div class="card green">
+                    <div>
+                        <h2>53%</h2>
+                        <p>Bounce Rate</p>
+                    </div>
+                    <i class="fa-solid fa-chart-column icon"></i>
+                </div>
+
+                <div class="card yellow">
+                    <div>
+                        <h2>44</h2>
+                        <p>User Registrations</p>
+                    </div>
+                    <i class="fa-solid fa-user-plus icon"></i>
+                </div>
+
+                <div class="card red">
+                    <div>
+                        <h2>65</h2>
+                        <p>Unique Visitors</p>
+                    </div>
+                    <i class="fa-solid fa-chart-pie icon"></i>
+                </div>
+
+            </section>
+
+            <!-- Bottom Grid -->
+            <section class="bottom-grid">
+
+                <!-- Chart -->
+                <div class="chart-box">
+                    <h2>Sales Value</h2>
+                    <canvas id="salesChart"></canvas>
+                </div>
+
+                <!-- Right Box -->
+                <div class="map-box">
+                    <h2>Sales Value</h2>
+
+                    <div class="world-map">
+                        🌍
+                    </div>
+
+                    <div class="mini-stats">
+                        <div class="mini-box">
+                            <h3>Visitors</h3>
+                        </div>
+
+                        <div class="mini-box">
+                            <h3>Online</h3>
+                        </div>
+
+                        <div class="mini-box">
+                            <h3>Sales</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+</body>
+</html>

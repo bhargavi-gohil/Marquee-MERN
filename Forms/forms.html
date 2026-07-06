@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form action="submit.html" method="post">
+
+    <h1 id="title">Sports Physical form</h1>
+    <fieldset>
+       <legend>Athlet Information</legend>
+    <ul>
+        <li><label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name..." required><br><br></li>
+
+        <li><label for="school">School/Team: </label>
+        <input type="text" id="school" name="school" placeholder="Enter School/Team Name.." value="Parul-University"  readonly required><br><br></li>
+
+        <li><label for="sport">Sport: </label>
+        <input type="text" id="sport" name="sport" placeholder="Enter sport name..." required><br><br></li>
+
+        <li><label for="pname">Parents/Guardian Name: </label>
+        <input type = "text" id="pname" name="pname" placeholder="Enter Parents/Guardian Name..." required><br><br></li>
+
+       <li> <label for="contact">Contact Number: </label>
+        <input type="text" id="contact" name="contact" placeholder="Ex: 123-456-7890" required><br></li>
+    </ul>
+    </fieldset>
+
+    <!-- Medical History! -->
+     <fieldset>
+        <legend>Medical History of Athlete</legend>
+        <ul>
+            <li>
+                <label for="concussions">History of Concussions: </label>
+                <input type="radio" id="yes1" name="concussion" value="yes" required>
+                <label for="yes1"> Yes</label>
+                <input type="radio" id="no1" name="concussion" value="no"   required>
+                <label for="no1"> No</label><br></li>
+        
+            <li>
+                <label for="previous">Previous Surgeries: </label>
+                <input type="text" id="previous" name="previous" placeholder="Enter previous surgeries..."><br><br>
+            </li>
+            <li>
+                <label>Any bone fractures? </label>
+                <input type="radio" id="yes2" name="fracture" value="yes" required>
+                <label for="yes2"> Yes</label>
+                <input type="radio" id="no2" name="fracture" value="no" required>
+                <label for="no2"> No</label></li>
+            <li>
+                <label>Asthma or breathing problems? </label>
+                <input type="radio" id="yes3" name="asthma" value="yes" required>
+                <label for="yes3"> Yes</label>
+                <input type="radio" id="no3" name="asthma" value="no" required>
+                <label for="no3"> No</label>
+            </li>
+        </ul>
+     </fieldset>
+
+     <fieldset>
+
+        <legend>Date/time</legend>
+        <ul>
+            <li>
+                <label for="DOB">DOB: </label>
+                <input type="date" id="DOB" name="DOB" required />
+            </li>
+            <li>
+                <label for="time">Time: </label>
+                <input type="time" id="time" name="time"  required />
+            </li>
+            <li>
+                <label for="datetime">date/time: </label>
+                <input type="datetime-local" id="datetime" name="datetime" required />
+            </li>
+        </ul>
+     </fieldset>
+     <fieldset>
+        <legend>Textarea</legend>
+        <label for="summary"><p>Summary of your last operations: </p></label>
+        <textarea id="summary" name="summary" rows="4" cols="50" placeholder="write summary of your last operations..."></textarea>
+     </fieldset>
+
+     <fieldset>
+        <legend>File Upload</legend>
+        <label for="file">Choose a file to upload: </label>
+        <input type="file" id="file" name="file" accept=".pdf" required>
+     </fieldset>
+
+     <fieldset>
+        <legend>CheckBox</legend>
+        <ul>
+            <li>
+                
+                 <input type="checkbox" id="agree" name="agree" value ="true" required>
+                 <label for="agree" >I agree to the terms and conditions.</label>
+            </li>
+        </ul>
+     </fieldset>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+</form>
+</body>
+</html>
+
+
+<!-- radio, checkbox, submit, 
+ -- reset, text, password, email, number, date, file, hidden
+
+-- Important Attributes of form tag:
+action: Specifies the URL where the form data will be sent when the form is submitted.
+method: Specifies the HTTP method (GET or POST) to be used when submitting the form data.
+name: Specifies a name for the form, which can be used to reference the form in JavaScript or when submitting the form data.
+--- required, disabled, max , min, placeholder , readonly, value*
+--- id, name
+--- 
+ -->

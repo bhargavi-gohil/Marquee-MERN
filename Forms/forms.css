@@ -1,0 +1,15 @@
+#title{
+    text-align: center;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+body{
+    background-color: lavender;
+}
+#submit{
+    background-color: lightgreen;
+}
+#reset{
+    background-color: lightcoral;
+}   
