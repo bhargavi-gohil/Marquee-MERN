@@ -59,6 +59,7 @@ let sum2 = (a,b) => a+b;
 //   // code to be executed
 // }
 
+
 let values = [1,2,3,4];
 let [val1,val2,...rest] = [...values];
 
@@ -77,3 +78,11 @@ let [val1,val2,...rest] = [...values];
     console.log(a, b);
 })(2,3);
 
+// Higher Order Function: 
+//a function that takes one or more functions as arguments, or returns a function as its result. 
+// Higher-order functions are a powerful feature of JavaScript and are commonly used in functional programming.
+
+// Pure and Impure Functions:
+// A pure function is a function that always produces the same output for the same input and does not have any side effects. 
+// An impure function, on the other hand, may produce different outputs for the same input or have side effects that affect the program's state.
+    
