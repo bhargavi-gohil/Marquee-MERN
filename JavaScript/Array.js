@@ -16,7 +16,7 @@ marks.forEach(function (el,index) {
     
 })
 
-// reduce()
+// reduce()  --> transform array
 const numbers = [1, 2, 3, 4, 5];
 const res = numbers.reduce((accumulator, currentValue, index) => {
     return accumulator + currentValue;
