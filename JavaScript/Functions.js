@@ -38,7 +38,12 @@ let sum1 = function(a,b){
 
 // ANONYMOUS FUNCTION:
 // A function without a name is called an anonymous function.
-
+/**
+ * 
+ * @param {int} a 
+ * @param {int} b 
+ * @returns {int}
+ */
 let sum3 = function(a,b){
     return a+b;
 }
