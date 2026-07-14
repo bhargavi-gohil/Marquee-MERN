@@ -163,33 +163,43 @@ const student = [
   }
 ]
 
-function sendEmail(student) {
-    console.log()
-}
+// function sendEmail(student) {
+//     console.log()
+// }
 
-student.forEach((student) => {
-    console.log(`To      : {aarav.sharma@example.com}
-// Subject : Welcome to {JavaScript} Course
+// student.forEach((student) => {
+//     console.log(`To      : {aarav.sharma@example.com}
+// // Subject : Welcome to {JavaScript} Course
 
-// Hello Aarav Sharma,
+// // Hello Aarav Sharma,
 
-// We are happy to have you in our {JavaScript} course.
-// We hope you enjoy learning with us.
-// If you have any questions, feel free to contact us.
+// // We are happy to have you in our {JavaScript} course.
+// // We hope you enjoy learning with us.
+// // If you have any questions, feel free to contact us.
 
-// Phone : {9876543210}
+// // Phone : {9876543210}
 
-// Regards,
-// Parul University
+// // Regards,
+// // Parul University
 
-// 4. Return the highest examscore from students Array >>>
+// // 4. Return the highest examscore from students Array >>>
 
-// 5 Return all the student who are in BCA Course  >>> create a function that accepts CourseName and return result
+// // 5 Return all the student who are in BCA Course  >>> create a function that accepts CourseName and return result
 
-Welcome to ABC College!
+// Welcome to ABC College!
 
-We hope you have a wonderful learning experience in the ${student.course} program.
+// We hope you have a wonderful learning experience in the ${student.course} program.
 
-Best Regards,
-${name}`)
-});
+// Best Regards,
+// ${name}`)
+// });
+
+
+// return all the students who are in bca course
+ function Course(courseName) {
+    return student.filter(student => student.course === courseName);
+}  
+console.log(Course('BCA'))
+
+// calculate total price of the product in  cart..
+// function totalPrice()
