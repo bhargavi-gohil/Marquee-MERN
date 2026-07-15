@@ -42,6 +42,7 @@ function createBankAccount(accountHolder = 'john', mobile = 1234566778, email = 
             }
             currentBalance -= amount;
             console.log(`Withdraw: ${amount}. New balance: ${currentBalance}`);
+            sendEmailWithdraw.call(this,200)
         },
 
         checkBalance() {
@@ -53,9 +54,12 @@ function createBankAccount(accountHolder = 'john', mobile = 1234566778, email = 
         }
     };
 }
-
+function sendEmailWithdraw(amount){
+    console.log(`Hello john,
+        withdrawal amount ${amount}`)
+}
 let bankAccount = createBankAccount();
-bankAccount.deposit(500);
-// bankAccount.withdraw(200);
+// bankAccount.deposit(500);
+bankAccount.withdraw(200);
 // bankAccount.checkBalance();
 // bankAccount.checkBankProfile();
