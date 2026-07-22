@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="unordered1">
+        <li class="lists">item 1</li>
+        <li class="lists">item 2</li>
+        <li class="lists">item 3</li>
+        <li class="lists">item 4</li>
+        <li class="lists">item 5</li>
+        <li class="lists">item 6</li>
+    </ul>
+    <ol id="fruits">
+        <li>Apple</li>
+        <li>banana</li>
+
+    </ol>
+    <script>
+        // add new list item in existing list
+        let newList = document.createElement('li');
+        newList.innerText = 'List 7';
+        
+        let list = document.getElementById('unordered1');
+        list.appendChild(newList);
+        // console.log(newList);
+
+        // create array -> forEach -> append parent element
+        let fruits = ["apple","kiwi","banana"];
+
+        let newItem = document.createElement('li');
+        newItem.textContent = 'Blueberry';
+        Object.values(fruits).forEach((fruit) => {
+            let list = document.getElementById('fruits');
+            list.appendChild(newItem);
+    
+            console.log(fruit);
+        });
+        
+    </script>
+</body>
+</html>

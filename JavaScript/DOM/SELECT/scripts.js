@@ -28,7 +28,7 @@ Object.values(allElements).forEach((el) => {
 
 // 4. getElementByName 
 let list = document.getElementsByName('');
-console.log(list);
+// console.log(list);
 
 //  QUERY SELECTOR 
 
@@ -36,5 +36,6 @@ let l = document.querySelector("ul");
 
 // Select the list(nth) child <li>
 let firstItem = l.querySelector("li:nth-child(3)");
-console.log(firstItem.textContent);
+// console.log(firstItem.textContent);
 
+// 
