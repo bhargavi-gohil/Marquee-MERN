@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+    <ol id="List">
+        <li class="Items">Item 1</li>
+        <li class="Items">Item 2</li>
+        <li class="Items">Item 3</li>
     </ol>
 
     <script>
-        const ele = document.createElement("li");
+            let ele = document.createElement("li");
             ele.textContent = "This is a text";
+            let ol = document.getElementById("List");   
             ol.insertAdjacentElement("afterbegin", ele);
             ol.insertAdjacentElement("beforeend", ele);
 
