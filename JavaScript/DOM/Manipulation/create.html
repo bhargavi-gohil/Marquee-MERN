@@ -37,7 +37,42 @@
             let list = document.getElementById('fruits');
             list.appendChild(newItem);
     
-            console.log(fruit);
+            // console.log(fruit);
+
+            // prepend(), after(), before(), insertAdjacentElement()
+            document.getElementById('fruits').before(newItem);
+            // console.log(newItem);
+            
+            let List = document.getElementById('fruits');
+            List.insertAdjacentElement('afterend', newItem);
+            let item3 = document.getElementById('unordered1');
+            // console.log(item3);
+
+            // RemoveChild() 
+            // let removeItem = document.getElementById('unordered1');
+            // removeItem.removeChild(removeItem.lastElementChild);    
+            // console.log(removeItem);
+
+            // cloneNode() -> clone the element
+            // let cloneItem = document.getElementById('unordered1');
+            // let clone = cloneItem.cloneNode(true);
+            // // console.log(clone);
+
+            // // parent element:
+            // let List3 = document.getElementById('unordered1');
+            // let newList3 = document.createElement('li');
+            // newList3.textContent = 'List 8';
+            // List3.insertBefore(newList3, List3.lastElementChild);
+            // // console.log(List3); 
+
+            // // replaceChild() -> replace the element
+            // let List4 = document.getElementById('unordered1');
+            // let newList4 = document.createElement('li');
+            // newList4.textContent = 'List 9';
+            // List4.replaceChild(newList4, List4.lastElementChild);
+            // console.log(List4);
+
+            
         });
         
     </script>
