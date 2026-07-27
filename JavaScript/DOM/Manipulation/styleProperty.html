@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Property</title>
+</head>
+<body>
+    <fieldset>
+        <legend> Style Property</legend>
+        <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis id totam asperiores incidunt laudantium reprehenderit? Consequuntur inventore distinctio excepturi dicta? Aspernatur tempore pariatur aliquid eos fuga nemo, necessitatibus quisquam incidunt?
+
+        </p>
+    </fieldset>
+
+    <script>
+        let para = document.getElementById('paragraph')[0];
+        para.style.backgroundColor = 'red';
+        para.style.padding = '2px 10px';
+        para.style.fontSize = '1.5rem';
+
+        para.style_cssText = 'background-color: green, font-size:1.6rem';
+        console.log(para)
+    </script>
+</body>
+</html>

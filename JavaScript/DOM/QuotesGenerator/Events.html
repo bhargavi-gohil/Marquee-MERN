@@ -120,9 +120,10 @@
         let rIdx = Math.floor(Math.random() * quotes.length);
         let quote = quotes[rIdx].quote;
         let author = quotes[rIdx].createdBy;
-        let quoteDiv = document.getElementById("quote");
-quoteDiv.innerHTML = `"${quote}" - ${author}`;
-        newEle.innerHTML = "";
+        let list = document.getElementById("list");
+        list.innerHTML = "";
+        let newEle = document.createElement("li");
+        newEle.innerHTML = `"${quote}" - ${author}`;
         list.appendChild(newEle);
       });
     </script>
