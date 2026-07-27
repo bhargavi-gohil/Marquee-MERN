@@ -7,20 +7,32 @@
 </head>
 <body>
     <fieldset>
-        <legend> Style Property</legend>
-        <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis id totam asperiores incidunt laudantium reprehenderit? Consequuntur inventore distinctio excepturi dicta? Aspernatur tempore pariatur aliquid eos fuga nemo, necessitatibus quisquam incidunt?
-
+        <legend>Style Property</legend>
+        <p id="ppara" class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis id totam asperiores incidunt laudantium reprehenderit? Consequuntur inventore distinctio excepturi dicta? Aspernatur tempore pariatur aliquid eos fuga nemo, necessitatibus quisquam incidunt?
         </p>
     </fieldset>
 
     <script>
-        let para = document.getElementById('paragraph')[0];
-        para.style.backgroundColor = 'red';
-        para.style.padding = '2px 10px';
-        para.style.fontSize = '1.5rem';
+        // Correct ID
+        let p = document.getElementById('ppara');
 
-        para.style_cssText = 'background-color: green, font-size:1.6rem';
-        console.log(para)
+        // Apply styles individually
+        p.style.color = "blue";
+        p.style.fontSize = "18px";
+        p.style.fontWeight = "bold";
+
+        // style cssText
+        p.style.cssText = "color: green; font-size: 1.6rem;";
+        console.log(p);
+
+        // classList -> add, remove, toggle, contains
+        p.classList.add("para");
+        // p.classList.remove("para");
+        p.classList.replace("para", "para1");
+        // p.classList.toggle("para1"); // add if not present, remove if present
+        console.log(p.classList.contains("para1"));
+
     </script>
 </body>
 </html>
