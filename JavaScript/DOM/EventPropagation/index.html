@@ -13,7 +13,14 @@ It is the combination of both event capture and event bubbling.
 events vs event  => events -> it is the action that occurs on the element.
 event -> it is the object that is created when the event occurs. It contains all the information about the event that has occurred.
  -->
-
+<!-- stop propagation :
+    1. stopPropagation() -> it stops the event from propagating further.
+     It stops the event from bubbling up or capturing down the DOM tree.
+    2. stopImmediatePropagation() -> it stops the event from propagating further and also stops the 
+    other event listeners from being called. 
+    It stops the event from bubbling up or capturing down the DOM tree and also stops the other event listeners from being called. 
+    3. preventDefault() -> it prevents the default action of the event from being triggered. It prevents the default action of the event from being triggered. For example, if you click on a link, it will prevent the link from being followed.
+  -->
  <!doctype html>
 <html lang="en">
   <head>
@@ -76,19 +83,23 @@ event -> it is the object that is created when the event occurs. It contains all
 
         gp.addEventListener('click', () => {
             console.log('Grand parent clicked');
-        },true);
+        });
 
-        p.addEventListener('click', () => {
+        p.addEventListener('click', (event) => {
+            // stopPropagation() -> it stops the event from propagating further.
+            // event.stopPropagation();
             console.log('Parent clicked');
-        },false);
+        });
 
-        c.addEventListener('click', () => {
+        c.addEventListener('click', (e) => {
+            // stopImmediatePropagation()
+            e.stopImmediatePropagation();
             console.log('Child clicked');
-        },true);
+        });
 
         gc.addEventListener('click', () => {
             console.log('Grand child clicked');
-        },true);
+        });
 
     </script>
   </body>
