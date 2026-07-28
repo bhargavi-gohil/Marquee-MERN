@@ -1,0 +1,92 @@
+ <!-- event capture -> it captures the event from the parent to child -->
+ <!-- event bubbling -> it bubbles the event from the child to parent -->
+
+<!-- syntax : (event capture) -> 
+ addEventListener('event', eventHandler, true) -> true means event capture
+
+syntax : (event bubbling) ->
+id.addEventListener('event', eventHandler, false) -> false means event bubbling
+
+propagation -> it is the process of event capture and event bubbling. 
+It is the combination of both event capture and event bubbling.
+ -->
+
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Code for Propagation */
+      #grand-parent {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(213, 37, 37);
+      }
+      #parent {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(200, 119, 119);
+      }
+      #child {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(162, 223, 7);
+      }
+      #grand-child {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(10, 187, 206);
+      }
+      #grand-parent,
+      #parent,
+      #child,
+      #grand-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Another Example</h3>
+    <div id="grand-parent">
+      <div id="parent">
+        <div id="child">
+          <div id="grand-child"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Example -->
+
+    <h3>Here is the Link</h3>
+    <a href="https://github.com/Laxman67">Click Here </a>
+
+
+    <script>
+        let gp = document.getElementById('grand-parent');
+        let p = document.getElementById('parent');
+        let c = document.getElementById('child');
+        let gc = document.getElementById('grand-child');
+
+        gp.addEventListener('click', () => {
+            console.log('Grand parent clicked');
+        },true);
+
+        p.addEventListener('click', () => {
+            console.log('Parent clicked');
+        },false);
+
+        c.addEventListener('click', () => {
+            console.log('Child clicked');
+        },true);
+
+        gc.addEventListener('click', () => {
+            console.log('Grand child clicked');
+        },true);
+
+    </script>
+  </body>
+</html>
