@@ -153,7 +153,7 @@
         <button id="clear-board">Clear</button>
 
         <div class="control-group">
-            <strong>Brush Size</strong>
+            <label for="slider"><strong>Brush Size</strong></label>
             <input type="range" id="slider" min="0" max="50" value="10" />
         </div>
 
@@ -220,7 +220,13 @@
         clearBtn.addEventListener("click", function () {
             board.innerHTML = "";
         });
-
+        slider.addEventListener("input", function (e) {
+            size = e.target.value;
+        document.querySelectorAll('.drawing').forEach((el)=>{
+            el.style.width= `${size}px`
+            el.style.height= `${size}px`
+        })   
+        });
         slider.addEventListener("input", function () {
             size = slider.value;
         });
