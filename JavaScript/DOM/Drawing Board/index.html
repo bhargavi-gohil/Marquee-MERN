@@ -220,6 +220,7 @@
         clearBtn.addEventListener("click", function () {
             board.innerHTML = "";
         });
+
         slider.addEventListener("input", function (e) {
             size = e.target.value;
         document.querySelectorAll('.drawing').forEach((el)=>{
@@ -240,10 +241,12 @@
             }
         });
 
+        // brush size changing
         document.addEventListener("keydown", function (e) {
             if (e.key == "ArrowUp") {
                 size++;
                 slider.value = size;
+
             }
             if (e.key == "ArrowDown") {
                 size--;
