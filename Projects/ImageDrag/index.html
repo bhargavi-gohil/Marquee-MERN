@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .containers {
+            min-height: 300px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-content: flex-start;
+            border: 2px solid black;
+        }
+
+        .containers:nth-child(1) {
+            background: lightgray;
+        }
+
+        .containers:nth-child(2) {
+            background: lightgray;
+        }
+
+        .draggable {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            cursor: grab;
+            border: 2px solid black;
+        }
+
+        .dragging {
+            opacity: 0.5;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="containers">
+            <img class="draggable" src="https://i.pinimg.com/736x/f2/20/e5/f220e5f58879708b70f02b580852e504.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/56/04/46/560446e5a1a0472a4c2261cf7962805b.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/d0/35/d0/d035d0f0b1857b48dd5bb3cad7258f64.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/4b/f4/ac/4bf4acb7688c74dbcb8e6d8df2a61587.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/a4/33/ff/a433ffdb6525425fda25cc21a5d26402.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/e0/f2/cc/e0f2cc1a6fb92a94add39892f7237696.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+        </div>
+        <div class="containers">
+            <img class="draggable" src="https://i.pinimg.com/736x/13/ce/11/13ce1100cb379869b6c487511a717d71.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/89/18/31/891831bb793c60b0cb810f89cb97246b.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/2f/5b/35/2f5b355b453e310922911510412e0a35.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/8e/b9/12/8eb912d78b444ab4511749f6b1f0077f.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/736x/a8/50/c2/a850c21d9c5c9b2069c6cca24a3df60f.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+            <img class="draggable" src="https://i.pinimg.com/1200x/5b/a7/b1/5ba7b12b28fd2888fc2a3c800dcab6d6.jpg"
+                draggable="true" alt="Drag and drop image" title="Drag and drop image">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
