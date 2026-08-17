@@ -90,4 +90,18 @@ let [val1,val2,...rest] = [...values];
 // Pure and Impure Functions:
 // A pure function is a function that always produces the same output for the same input and does not have any side effects. 
 // An impure function, on the other hand, may produce different outputs for the same input or have side effects that affect the program's state.
-    
+
+
+// function with no args and no parameters
+function add(){
+    let a=10;
+    let b = 15;
+    console.log(a+b);
+}
+add();
+
+// with args and no return type
+function sum111(a,b){
+    console.log("sum :",a+b);
+}
+sum111(2,3)
