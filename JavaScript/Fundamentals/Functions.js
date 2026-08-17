@@ -35,6 +35,7 @@ let sum = add(2,3);
 let sum1 = function(a,b){
     return a+b;
 }
+// console.log(sum1(2,3));
 
 // ANONYMOUS FUNCTION:
 // A function without a name is called an anonymous function.
@@ -47,7 +48,6 @@ let sum1 = function(a,b){
 let sum3 = function(a,b){
     return a+b;
 }
-// console.log(sum1(2,3));
 
 // ARROW FUNCTION:
 // Arrow functions are a more concise syntax for writing function expressions.
@@ -105,3 +105,19 @@ function sum111(a,b){
     console.log("sum :",a+b);
 }
 sum111(2,3)
+
+
+const Detail = {
+    name : "xyz"
+}
+
+Detail.name="Bhargavi";
+console.log(Detail)
+
+function name(msg){
+    return msg;
+}
+function Hello(name){
+    console.log("Hello!!")
+}
+Hello(name);
