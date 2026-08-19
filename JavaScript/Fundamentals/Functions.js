@@ -129,4 +129,14 @@ function name1(name){
     }
 }
 let ans = name1("Bhargavi");
-console.log(ans("Hii"))
+// console.log(ans("Hii"))
+
+// callback function -> a function that is passed as an argument to another function and is executed at a later time.
+
+function executeCall(callback) {
+    callback();
+}
+
+executeCall(function () {
+    console.log("Anonymous callback function executed");
+});
