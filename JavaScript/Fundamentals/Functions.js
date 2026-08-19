@@ -79,8 +79,8 @@ let [val1,val2,...rest] = [...values];
 // It is often used to create a new scope and avoid polluting the global namespace.
 
 (function(a,b){
-    console.log("IIFE");
-    console.log(a, b);
+    // console.log("IIFE");
+    // console.log(a, b);
 })(2,3);
 
 // Higher Order Function: 
@@ -96,13 +96,13 @@ let [val1,val2,...rest] = [...values];
 function add(){
     let a=10;
     let b = 15;
-    console.log(a+b);
+    // console.log(a+b);
 }
 add();
 
 // with args and no return type
 function sum111(a,b){
-    console.log("sum :",a+b);
+    // console.log("sum :",a+b);
 }
 sum111(2,3)
 
@@ -112,12 +112,21 @@ const Detail = {
 }
 
 Detail.name="Bhargavi";
-console.log(Detail)
+// console.log(Detail)
 
 function name(msg){
     return msg;
 }
 function Hello(name){
-    console.log("Hello!!")
+    // console.log(name)
 }
-Hello(name);
+// Hello(name("Hello Bhargavi"));
+
+// Higher Order Function...
+function name1(name){
+    return function higherOrder(name2){
+         return name2;
+    }
+}
+let ans = name1("Bhargavi");
+console.log(ans("Hii"))
