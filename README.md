@@ -1,47 +1,53 @@
-# MERN-STACK Repository
+#  Marquee-MERN Repository 🌟
 
-A collection of projects, practice exercises, and notes built while learning and experimenting with the MERN stack and core web development concepts.  
+A collection of projects, practice exercises, and notes built while learning and experimenting with the **MERN stack** and core web development concepts.  
 This repository serves as a learning hub, showcasing hands-on implementations in **HTML, CSS, and JavaScript**, with a focus on building strong fundamentals before diving deeper into MERN.
 
 ---
 
 ## 📂 Repository Structure
 
-- **AmazonClone/**  
-  A front-end clone of Amazon’s UI, demonstrating layout, styling, and responsive design.
+- **.vscode/**  
+  Editor configuration and workspace settings.
 
-- **Box-Model/**  
-  Exercises and examples to understand the CSS box model (margin, border, padding, content).
+- **HTML & CSS/**  
+  Practice files demonstrating styling and DOM basics.
 
-- **DivElement/**  
-  Layout experiments using `<div>` elements for structuring web pages.
+- **JavaScript/**  
+  Examples including callback functions and event handling.
 
-- **Forms/**  
-  HTML form handling examples, including input types, validation, and styling.
+- **functions/**  
+  Utility functions and helpers for the project.
 
 - **NOTES/**  
-  Study notes and documentation related to MERN stack concepts and web development.
+  Documentation and study notes related to MERN concepts.
 
-- **SEMENTIC HTML/**  
-  Examples of semantic HTML usage for accessibility and better structure.
+- **Projects/**  
+  Collection of mini-projects and experiments:
+  - 💡 **BulbOnOff/** → Toggle a bulb on/off interactively using JavaScript.  
+  - 🎯 **DragEvents/** → Demonstrates drag-and-drop event handling.  
+  - 🎨 **Drawing Board/** → drawing board for freehand sketches.  
+  - 🖼️ **ImageDrag/** → Image dragging functionality project.  
+  - ✨ **QuotesGenerator/** → Random quotes generator with dynamic display.  
+  - 🏢 **StudioNamaa/** → Web project (likely portfolio or studio showcase).  
+  - 📝 **To-do list/** → Task management app with add/remove functionality.  
+  - 📋 **form(js)/** → Form handling project using JavaScript validation/events.  
 
-- **designs/**  
-  UI/UX design prototypes and styling experiments.
-- **flipkart Clone/**
-- A MERN‑based e‑commerce web app replicating Flipkart’s core shopping experience.
+- **README.md/**  
+  Documentation file describing project purpose, setup, and usage.
 
 ---
 
 ## ⚙️ Features
 
-- Organized into topic-based folders for easy navigation.
-- Includes both **projects** (e.g., AmazonClone) and **concept practice** (e.g., Box-Model, DOM).
+- Organized into topic-based folders for easy navigation.  
+- Includes both **projects** (e.g., To-do list, Drawing Board) and **concept practice** (e.g., DragEvents, form handling).  
 - Acts as a **learning portfolio** for web development fundamentals.
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/bhargavi-gohil/MERN-STACK.git
+Clone the repository:
+```bash
+git clone https://github.com/bhargavi-gohil/Marquee-MERN.git
