@@ -23,7 +23,7 @@ section {
     box-shadow: 0 2px 8px #ddd;
 }
 
-.form {
+#studentForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -49,4 +49,13 @@ button {
     gap: 15px;
 }
 
+.dark-mode {
+    background: #222;
+    color: white;
+}
 
+.dark-mode section,
+.dark-mode .student-card {
+    background: #333;
+    color: white;
+}
