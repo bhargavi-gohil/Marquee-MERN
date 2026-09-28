@@ -43,4 +43,10 @@ button {
     margin-right: 8px;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
 
