@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Management</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -13,7 +13,7 @@
     </header>
 
     <main>
-        <!-- Form -->
+      <!-- Form -->
       <section>
         <h2>Student registration form</h2>
         <form action="submit">
@@ -77,32 +77,35 @@
             </div>
           </div>
         </form>
-
-
       </section>
       <!-- statistic -->
-       <section>
-            <h2>Student Statistics</h2>
-            <p>Total Student: 0</p>
-       </section>
+      <section>
+        <p>Total Students: <span id="total">0</span></p>
+        <p>Web Development: <span id="web">0</span></p>
+        <p>UI/UX: <span id="uiux">0</span></p>
+        <p>Python: <span id="python">0</span></p>
+        <p>Data Analytics: <span id="data">0</span></p>
+        <p>MERN Stack: <span id="mern">0</span></p>
+        <p>Cloud Computing: <span id="cloud">0</span></p>
+      </section>
 
-       <section>
-            <h2>Search and Filter</h2>
-            <input type="text" placeholder="Search...">
-       </section>
+      <section>
+        <h2>Search and Filter</h2>
+        <input type="text" placeholder="Search..." />
+      </section>
 
-       <section>
-            <h2>Student Cards</h2>
-            <div class="cards">
-                <div class="card">Student card 1</div>
-                <div class="card">Student card 2</div>
-                <div class="card">Student card 3</div>
-            </div>
-       </section>
+      <section>
+        <h2>Student Cards</h2>
+        <div class="cards">
+          <div class="card">Student card 1</div>
+          <div class="card">Student card 2</div>
+          <div class="card">Student card 3</div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>2026 Student Application Management System</p>
+      <p>2026 Student Application Management System</p>
     </footer>
 
     <script src="script.js"></script>
